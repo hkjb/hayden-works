@@ -1,0 +1,10 @@
+$primary: lightcoral;
+
+$primary-lighter: lighten($primary, 25%);
+$primary-light: lighten($primary, 10%);
+$primary-dark: darken($primary, 10%);
+$primary-darker: darken($primary, 25%);
+
+$font-size-sm: 18px;
+$font-size: 20px;
+$font-size-lg: 30px;

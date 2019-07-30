@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
 $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 
 @import '~@fortawesome/fontawesome-pro/scss/brands';
@@ -5,49 +7,20 @@ $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 @import '~@fortawesome/fontawesome-pro/scss/light';
 @import '~@fortawesome/fontawesome-pro/scss/regular';
 @import '~@fortawesome/fontawesome-pro/scss/solid';
-
 @import '~@fortawesome/fontawesome-pro/scss/fontawesome';
 
 @import '~bulma';
+
+@import 'variables';
+@import 'links';
+
+html {
+  font-family: 'Karla', sans-serif;
+  font-size: $font-size;
+}
 
 html, body, #root {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-
-  &__header {
-    height: 75px;
-    padding: 25px;
-  }
-
-  &__content {
-    flex-grow: 1;
-    padding: 25px;
-  }
-
-  &__footer {
-    text-align: right;
-    height: 75px;
-    padding: 25px;
-  }
-
-  &__header, &__content, &__footer {
-    position: relative;
-    z-index: 100;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background: linear-gradient(lavender, white);
-    z-index: 0;
-  }
 }

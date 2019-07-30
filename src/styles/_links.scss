@@ -1,0 +1,10 @@
+a {
+  color: $primary-dark;
+  background: white;
+  padding: 0 10px;
+  transition: 0.25s;
+
+  &:hover {
+    color: $primary-darker;
+  }
+}
