@@ -5,7 +5,7 @@ const Home = {
 };
 
 const About = {
-  path: '/',
+  path: '/about',
   header: 'about',
   content: '/pages/about.md',  
 };
