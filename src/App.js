@@ -1,27 +1,30 @@
 import React from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import Routes from 'routes';
+
+import Header from 'components/header';
 import Footer from 'components/footer';
+import MarkdownReader from 'components/markdownReader';
 
 import 'styles/styles.scss';
-
 import 'App.scss';
 
 function App() {
+  
+  const pages = Routes.pageArray.map(route => (
+    <Route exact path={route.path} component={<MarkdownReader src={route.content} />} />
+  ));
 
   return (
-    <div className="app">
-      <header className="app__header">
-        <a href="/">
-          <span className="icon">
-            <i className="fa fa-rabbit-fast" />
-          </span>
-          hello
-        </a>
-      </header>
-      <main className="app__content">
-        I'm Hayden, a web developer from Idaho living in Philadelphia
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <main className="app__content">
+          {pages}
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
