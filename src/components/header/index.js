@@ -7,7 +7,7 @@ import './styles.scss';
 function Header() {
 
   const links = Routes.pageArray.map((route, i) => i !== 0 && (
-    <Link key={i} to={route.path} className="mr-2">{route.header},</Link>
+    <Link key={i} to={route.path} className="mr-2">{route.header}</Link>
   ));
   
   return (
