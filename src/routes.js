@@ -16,4 +16,4 @@ const pageObject = {Home, About};
 export default {
   pageArray,
   pageObject,
-},
+};
