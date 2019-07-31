@@ -11,8 +11,8 @@ import 'App.scss';
 
 function App() {
   
-  const pages = Routes.pageArray.map(route => (
-    <Route exact path={route.path} component={<MarkdownReader src={route.content} />} />
+  const pages = Routes.pageArray.map((route, i) => (
+    <Route key={i} exact path={route.path} component={() => <MarkdownReader src={route.content} />} />
   ));
 
   return (
