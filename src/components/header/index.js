@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Routes from 'routes';
 
 import './styles.scss';
@@ -6,7 +7,7 @@ import './styles.scss';
 function Header() {
 
   const links = Routes.pageArray.map((route, i) => (
-    <Link key={i} to={route.path} />
+    <Link key={i} to={route.path}>{route.header},</Link>
   ));
   
   return (
@@ -15,7 +16,7 @@ function Header() {
         <span className="icon">
           <i className="fa fa-rabbit-fast" />
         </span>
-        hello
+        hello,
       </a>
       {links}
     </header>
