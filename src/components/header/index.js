@@ -7,17 +7,16 @@ import './styles.scss';
 function Header() {
 
   const links = Routes.pageArray.map((route, i) => i !== 0 && (
-    <Link key={i} to={route.path}>{route.header},</Link>
+    <Link key={i} to={route.path} className="mr-2">{route.header},</Link>
   ));
   
   return (
     <header className="app__header">
-      <a href="/">
+      <Link to="/" className="mr-2">
         <span className="icon">
           <i className="fa fa-rabbit-fast" />
         </span>
-        hello,
-      </a>
+      </Link>
       {links}
     </header>
   );
