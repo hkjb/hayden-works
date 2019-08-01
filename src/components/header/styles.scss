@@ -6,8 +6,11 @@
   padding: 25px;
   font-size: $font-size-lg;
   font-weight: bold;
-
-  .icon {
+  
+  &__home {
+    margin: 0 10px 0 0;
+  }
+  &__link {
     margin: 0 10px 0 0;
   }
 }
