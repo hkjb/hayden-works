@@ -12,7 +12,7 @@ import 'App.scss';
 function App() {
   
   const pages = Routes.pageArray.map((route, i) => (
-    <Route exact key={i} path={route.path} component={() => <MarkdownReader src={route.content} />} />
+    <Route exact key={i} path={route.path} component={() => <Markdown src={route.content} />} />
   ));
 
   return (
