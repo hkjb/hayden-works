@@ -4,7 +4,7 @@ import Routes from 'routes';
 
 import Header from 'components/header';
 import Footer from 'components/footer';
-import MarkdownReader from 'components/markdownReader';
+import Markdown from 'components/markdown';
 
 import 'styles/styles.scss';
 import 'App.scss';
