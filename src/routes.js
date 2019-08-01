@@ -1,5 +1,4 @@
 import HomePage from 'pages/home.md';
-import AboutPage from 'pages/about.md';
 
 const Home = {
   path: '/',
@@ -7,14 +6,8 @@ const Home = {
   content: HomePage,
 };
 
-const About = {
-  path: '/about',
-  header: 'about',
-  content: AboutPage,  
-};
-
-const pageArray = [Home, About];
-const pageObject = {Home, About};
+const pageArray = [Home];
+const pageObject = {Home};
 
 export default {
   pageArray,

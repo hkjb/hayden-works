@@ -6,14 +6,10 @@ class MarkdownReader extends Component {
     content: null,
   };
 
-  componentWillMount() {
-    console.log(this.props.src);
-    
+  componentWillMount() {    
     fetch(this.props.src).then((response) => {
-      console.log(response);
       return response.text();
     }).then((txtResponse) => {
-      console.log(txtResponse);
       this.setState({ content: txtResponse });
     });
   };
