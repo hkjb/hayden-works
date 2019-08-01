@@ -17,6 +17,7 @@ $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 html {
   font-family: 'Karla', sans-serif;
   font-size: $font-size;
+  color: #cccccc;
 }
 
 html, body, #root {
@@ -26,13 +27,13 @@ html, body, #root {
 }
 
 body { 
-  background: linear-gradient($primary, lightblue);
+  // background: linear-gradient($primary, lightblue);
   
   &::after {
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    background: url('~images/gems.png');
+    // background: url('~images/gems.png');
     z-index: 0;
   }
 }
