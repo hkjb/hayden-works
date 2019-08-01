@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient($primary, lightblue);
 
   &__content {
     flex-grow: 1;
@@ -15,13 +14,5 @@
   &__header, &__content, &__footer {
     position: relative;
     z-index: 100;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background: url('~images/gems.png');
-    z-index: 0;
   }
 }
