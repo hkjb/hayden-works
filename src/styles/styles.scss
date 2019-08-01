@@ -15,27 +15,15 @@ $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 @import 'links';
 
 html {
+  background: #333333;
   font-family: 'Karla', sans-serif;
   font-size: $font-size;
-  color: #cccccc;
 }
 
 html, body, #root {
   min-height: 100%;
   padding: 0;
   margin: 0;
-}
-
-body { 
-  // background: linear-gradient($primary, lightblue);
-  
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    // background: url('~images/gems.png');
-    z-index: 0;
-  }
 }
 
 h3 {
