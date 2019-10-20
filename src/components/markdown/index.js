@@ -6,17 +6,20 @@ class MarkdownReader extends Component {
     content: null,
   };
 
-  componentWillMount() {    
-    fetch(this.props.src).then((response) => {
-      return response.text();
-    }).then((txtResponse) => {
-      this.setState({ content: txtResponse });
-    });
+  componentDidMount() {
+    if (this.props.src && this.props.src.indexOf('/') !== -1) {
+      fetch(this.props.src).then(res => res.text()).then(txtres => this.setState({ content: txtres }));
+    } else {
+      this.setState({ content: this.props.src });
+    }
   };
 
   render() {
     return (
-      <ReactMarkdown source={this.state.content} />
+      <ReactMarkdown
+        linkTarget="_blank"
+        source={this.state.content}
+      />
     );
   };
 }
