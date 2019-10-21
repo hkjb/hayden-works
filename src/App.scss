@@ -10,11 +10,11 @@
   &__content {
     flex-grow: 1;
     padding: 0 25px;
-    color: white;
   }
 
   &__header, &__content, &__footer {
     position: relative;
+    color: white;
     z-index: 100;
   }
 
@@ -28,11 +28,6 @@
     a { color: $navy; }
   }
 
-  &.tomato {
-    background-color: $tomato;
-    a { color: $tomato; }
-  }
-
   &.maroon {
     background-color: $maroon;
     a { color: $maroon; }
@@ -41,10 +36,5 @@
   &.olive {
     background-color: $olive;
     a { color: $olive; }
-  }
-
-  &.orange {
-    background-color: $orange;
-    a { color: $orange; }
   }
 }

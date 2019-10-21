@@ -7,7 +7,7 @@ class MarkdownReader extends Component {
   };
 
   componentDidMount() {
-    if (this.props.src && this.props.src.indexOf('/') !== -1) {
+    if (this.props.src.indexOf('.md') !== -1) {
       fetch(this.props.src).then(res => res.text()).then(txtres => this.setState({ content: txtres }));
     } else {
       this.setState({ content: this.props.src });
@@ -17,6 +17,7 @@ class MarkdownReader extends Component {
   render() {
     return (
       <ReactMarkdown
+        escapeHtml={false}
         linkTarget="_blank"
         source={this.state.content}
       />

@@ -1,13 +1,14 @@
 import HomePage from 'pages/home.md';
 
-const Home = {
-  path: '/',
-  header: 'hello',
-  content: HomePage,
+const pageObject = { 
+  Home: {
+    path: '/',
+    header: 'hello',
+    content: HomePage,
+  }
 };
 
-const pageArray = [Home];
-const pageObject = {Home};
+const pageArray = Object.values(pageObject);
 
 export default {
   pageArray,

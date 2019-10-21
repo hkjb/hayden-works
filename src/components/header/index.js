@@ -9,13 +9,14 @@ function Header() {
   const links = Routes.pageArray.map((route, i) => (
     <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
   ));
+
+  const icons = ['rabbit-fast', 'computer-classic', 'mountain'];
+  const icon = icons[Math.floor(Math.random() * icons.length)];
   
   return (
     <header className="app__header">
       <NavLink to="/" className="app__header__home">
-        <span className="icon">
-          <i className="fa fa-rabbit-fast" />
-        </span>
+        <i className={`fa fa-${icon}`} />
       </NavLink>
       {links}
     </header>
