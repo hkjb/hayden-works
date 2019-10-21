@@ -1,12 +1,12 @@
-$primary: lightcoral;
-
-$primary-lighter: lighten($primary, 25%);
-$primary-light: lighten($primary, 10%);
-$primary-dark: darken($primary, 10%);
-$primary-darker: darken($primary, 25%);
-
 $family-sans-serif: 'Rubik';
 
 $font-size-sm: 18px;
 $font-size: 20px;
 $font-size-lg: 30px;
+
+$dark:   #333333;
+$navy:   #001f3f;
+$red:    #ff6347;
+$maroon: #aa5c5c;
+$olive:  #3d9970;
+$orange: #ff851b;

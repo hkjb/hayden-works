@@ -7,6 +7,7 @@ import Footer from 'components/footer';
 import Markdown from 'components/markdown';
 
 import 'styles/styles.scss';
+
 import 'App.scss';
 
 function App() {
@@ -15,9 +16,12 @@ function App() {
     <Route exact key={i} path={route.path} component={() => <Markdown src={route.content} />} />
   ));
 
+  const colors = ['dark', 'red', 'maroon', 'olive', 'orange', 'navy'];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
   return (
     <Router>
-      <div className="app">
+      <div className={`app ${color}`}>
         <Header />
         <main className="app__content">
           {pages}
