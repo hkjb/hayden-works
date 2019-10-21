@@ -16,12 +16,12 @@ function App() {
     <Route exact key={i} path={route.path} component={() => <Markdown src={route.content} />} />
   ));
 
-  const colors = ['dark', 'maroon', 'olive', 'navy'];
+  const colors = ['dark', 'maroon', 'blue', 'olive', 'navy', 'orange'];
   const color = colors[Math.floor(Math.random() * colors.length)];
 
   return (
     <Router>
-      <div className={`app ${color}`}>
+      <div id="#app" className={`app ${color}`}>
         <Header />
         <main className="app__content">
           {pages}

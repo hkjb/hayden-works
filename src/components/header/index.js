@@ -10,7 +10,7 @@ function Header() {
     <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
   ));
 
-  const icons = ['rabbit-fast', 'computer-classic', 'mountain'];
+  const icons = ['rabbit-fast', 'computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
   
   return (

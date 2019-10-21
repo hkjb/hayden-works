@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url('./images/gems.png');
   min-height: 100%;
 
   &__content {
@@ -14,27 +13,43 @@
 
   &__header, &__content, &__footer {
     position: relative;
-    color: white;
+    color: $white;
     z-index: 100;
   }
 
   &.dark {
+    background-image: $birds;
     background-color: $dark;
     a { color: $dark; }
   }
 
+  &.blue {
+    background-image: $church;
+    background-color: $blue;
+    a { color: $blue; }
+  }
+
   &.navy {
+    background-image: $polonez;
     background-color: $navy;
     a { color: $navy; }
   }
 
   &.maroon {
+    background-image: $map;
     background-color: $maroon;
     a { color: $maroon; }
   }
 
   &.olive {
+    background-image: $gems;
     background-color: $olive;
     a { color: $olive; }
+  }
+
+  &.orange {
+    background-image: $floral;
+    background-color: $orange;
+    a { color: $orange; }
   }
 }

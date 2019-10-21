@@ -5,7 +5,7 @@ const pageObject = {
     path: '/',
     header: 'hello',
     content: HomePage,
-  }
+  },
 };
 
 const pageArray = Object.values(pageObject);
