@@ -18,38 +18,32 @@
   }
 
   &.dark {
-    background-image: $birds;
-    background-color: $dark;
+    background: $birds, linear-gradient(45deg, $dark 0%, $navy 100%);
     a { color: $dark; }
   }
 
   &.blue {
-    background-image: $church;
-    background-color: $blue;
+    background: $church, linear-gradient(135deg, $blue 0%, $olive 100%);
     a { color: $blue; }
   }
 
   &.navy {
-    background-image: $polonez;
-    background-color: $navy;
+    background: $polonez, linear-gradient(225deg, $navy 0%, $blue 100%);
     a { color: $navy; }
   }
 
   &.maroon {
-    background-image: $map;
-    background-color: $maroon;
+    background: $map, linear-gradient(315deg, $maroon 0%, $dark 100%);
     a { color: $maroon; }
   }
 
   &.olive {
-    background-image: $gems;
-    background-color: $olive;
+    background: $gems, linear-gradient(315deg, $blue 0%, $olive 100%);
     a { color: $olive; }
   }
 
   &.orange {
-    background-image: $floral;
-    background-color: $orange;
+    background: $floral, linear-gradient(135deg, $orange 0%, $maroon 100%);
     a { color: $orange; }
   }
 }
