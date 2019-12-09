@@ -14,4 +14,4 @@ NSN Solutions | 6/2013 - 7/2018
   - [SnapShot Postcard](https://www.snapshotpostcard.com)
 
 #### Let's build something together!
-You can reach me through [LinkedIn](https://www.linkedin.com/in/hkjb/), [Twitter](https://twitter.com/hhhkkkjjjbbb), or at my email, [me@hayden.works](mailto:me@hayden.works).
+You can reach me through [LinkedIn](https://www.linkedin.com/in/hkjb/), [Twitter](https://twitter.com/hhhkkkjjjbbb), or at my email, [contact@hayden.works](mailto:contact@hayden.works).
