@@ -16,7 +16,7 @@ function App() {
     <Route exact key={i} path={route.path} component={() => <Markdown src={route.content} />} />
   ));
 
-  const colors = ['dark', 'maroon', 'blue', 'olive', 'navy', 'orange'];
+  const colors = ['maroon', 'blue', 'olive', 'orange'];
   const color = colors[Math.floor(Math.random() * colors.length)];
 
   return (
