@@ -9,15 +9,15 @@ const pageObject = {
     header: 'hello',
     content: HomePage,
   },
-  BestOf2018: {
-    path: '/2018',
-    header: '2018',
-    content: BestOf2018,
-  },
   BestOf2019: {
     path: '/2019',
     header: '2019',
     content: BestOf2019,
+  },
+  BestOf2018: {
+    path: '/2018',
+    header: '2018',
+    content: BestOf2018,
   },
 };
 
