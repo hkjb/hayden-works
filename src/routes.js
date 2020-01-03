@@ -14,6 +14,11 @@ const pageObject = {
     header: '2018',
     content: BestOf2018,
   },
+  BestOf2019: {
+    path: '/2019',
+    header: '2019',
+    content: BestOf2019,
+  },
 };
 
 const pageArray = Object.values(pageObject);
