@@ -6,11 +6,7 @@ import './styles.scss';
 
 function Header() {
 
-  const links = Routes.pageArray.map((route, i) => (
-    <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
-  ));
-
-  const icons = ['rabbit-fast', 'computer-classic'];
+  const icons = ['computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
   
   return (
@@ -18,7 +14,20 @@ function Header() {
       <NavLink to="/" className="app__header__home">
         <i className={`fa fa-${icon}`} />
       </NavLink>
-      {links}
+      
+      { Routes.pageArray.map((route, i) => route.children ? (
+          <React.Fragment key={i}>
+            <NavLink to={route.path} className="app__header__link">{route.header}</NavLink>
+            <div className="app__header__children">
+              { route.children.map((child, i) => (
+                <NavLink key={i} to={`${route.path}${child.path}`} className="app__header__link">{child.header}</NavLink>
+              ))}
+            </div>
+          </React.Fragment>
+        ) : (
+          <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
+        )
+      )}
     </header>
   );
 }
