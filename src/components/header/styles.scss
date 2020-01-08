@@ -1,16 +1,34 @@
 @import '~styles/variables';
 
 .app__header {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 25px 25px 10px 25px;
+  padding: 15px 25px 10px 25px;
   font-size: $font-size-lg;
   font-weight: bold;
   
   &__home {
-    margin: 0 10px 0 0;
+    margin: 10px 10px 0 0;
   }
   &__link {
-    margin: 0 10px 0 0;
+    margin: 10px 10px 0 0;
+    
+    &.active + .app__header__children {
+      display: flex;
+    }
+  }
+  &__children {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    order: 1;
+    margin: 5px 0 0 0;
+
+    a {
+      font-size: $font-size;
+    }
   }
 }
