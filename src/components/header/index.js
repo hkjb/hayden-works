@@ -9,39 +9,15 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   
   return (
-    <>
-      <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
-        <button className="app__drawer__link" onClick={() => setShowMenu(!showMenu)}>
-          <i className="fa fa-times" />
-        </button>
+    <header className={`app__navigation ${showMenu ? 'app__navigation--open' : ''}`}>
+      <button className="app__navigation__toggle" onClick={() => setShowMenu(!showMenu)}>
+        <i className={`fa fa-${showMenu ? 'bars' : 'times'}`} />
+      </button>
 
-        { Routes.pageArray.map((route, i) => route.show !== false && (
-          <NavLink key={i} to={route.path} className="app__drawer__link">{route.header}</NavLink>
-        ))}
-      </div>
-      <header className="app__header">
-        <button className="app__header__home" onClick={() => setShowMenu(!showMenu)}>
-          <i className="fa fa-bars" />
-        </button>
-
-        { Routes.pageArray.map((route, i) => {
-          if (route.highlight) {
-            return route.children ? (
-              <React.Fragment key={i}>
-                <NavLink to={route.path} className="app__header__link">{route.header}</NavLink>
-                <div className="app__header__children">
-                  { route.children.map((child, i) => child.show !== false && (
-                    <NavLink key={i} to={`${route.path}${child.path}`} className="app__header__link">{child.header}</NavLink>
-                  ))}
-                </div>
-              </React.Fragment>
-            ) : route.show !== false && (
-              <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
-            )
-          }
-        })}
-      </header>
-    </>
+      { Routes.pageArray.map((route, i) => route.show !== false && (
+        <NavLink key={i} to={route.path} className="app__navigation__link">{route.header}</NavLink>
+      ))}
+    </header>
   );
 }
 
