@@ -37,13 +37,18 @@
         margin-left: 100%;
       }
     }
-    
+        
     .app__navigation__link {
-      a {
-        font-size: $font-size-lg;
+      font-size: initial;
+      i {
+        font-size: initial;
       }
       strong {
         line-height: 1.6;
+        font-size: 0;
+      }
+      a {
+        font-size: $font-size-lg;
       }
     }
   }
@@ -54,11 +59,11 @@
     font-size: $font-size-lg;
     font-weight: bold;
     
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    
     transition: 0.25s;
+    
+    i {
+      font-size: initial;
+    }
   }
   
   &__social {
@@ -85,10 +90,8 @@
     height: auto;
     
     strong {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
       line-height: 1.175;
+      font-size: 0;
     }
     a {
       margin: 5px 0 0 0;
