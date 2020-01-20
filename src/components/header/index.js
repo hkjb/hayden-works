@@ -11,12 +11,24 @@ function Header() {
   return (
     <header className={`app__navigation ${showMenu ? 'app__navigation--open' : ''}`}>
       <button className="app__navigation__toggle" onClick={() => setShowMenu(!showMenu)}>
-        <i className={`fa fa-${showMenu ? 'bars' : 'times'}`} />
+        <i className={`fa fa-${showMenu ? 'times' : 'bars'}`} />
       </button>
 
-      { Routes.pageArray.map((route, i) => route.show !== false && (
-        <NavLink key={i} to={route.path} className="app__navigation__link">{route.header}</NavLink>
-      ))}
+      { Routes.pageArray.map((route, i) => {
+        if (route.show !== false) {
+          return route.children ? (
+            <div className="app__navigation__link--has-children">
+              <strong>{route.header}</strong>
+
+              { route.children.map((child, i) => (
+                <NavLink key={i} to={`${route.path}${child.path}`}>{child.header}</NavLink>
+              )}
+            </div>
+          ) : (
+            <NavLink key={i} to={route.path} className="app__navigation__link">{route.header}</NavLink>
+          );
+        }
+      })}
     </header>
   );
 }
