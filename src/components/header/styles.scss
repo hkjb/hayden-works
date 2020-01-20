@@ -48,6 +48,17 @@
   transition: 0.25s;
   z-index: 1000;
   
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    
+    &--open {
+    left: 0%;
+    }
+    &--closed {
+      left: -100%;
+    }
+  }
+  
   &--open {
     left: 0;
   }
@@ -57,5 +68,7 @@
   
   &__link {
     margin: 0 0 10px 0;
+    line-height: 1.8;
+    font-weight: bold;
   }
 }
