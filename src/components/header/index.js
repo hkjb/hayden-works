@@ -6,7 +6,7 @@ import './styles.scss';
 
 function Header() {
   
-  const showMenu = false;
+  let showMenu = false;
 
   const icons = ['computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
@@ -17,7 +17,7 @@ function Header() {
   
   return (
     <>
-      <div className={`app__drawer ${showMenu && 'app__drawer--open'}`}>
+      <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
         { Routes.pageArray.map((route, i) => route.show !== false && (
           <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
         ))}
@@ -27,7 +27,7 @@ function Header() {
           <i className={`fa fa-${icon}`} />
         </button>
 
-        { Routes.pageArray.map((route, i) => route.highlight && route.children ? (
+        { Routes.pageArray.map((route, i) => route.children ? (
             <React.Fragment key={i}>
               <NavLink to={route.path} className="app__header__link">{route.header}</NavLink>
               <div className="app__header__children">
