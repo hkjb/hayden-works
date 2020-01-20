@@ -2,7 +2,7 @@
 
 .app__content {
   padding: 15px 25px 0 25px;
-  left: 70px;
+  margin-left: 70px;
   transition: 0.25s;
 }
 
@@ -26,7 +26,7 @@
       width: 200px;
       
       & + .app__content {
-        left: 200px;
+        margin-left: 200px;
       }
     }
     @media only screen and (max-width: 700px) {
@@ -34,7 +34,7 @@
       padding: 25px;
       
       & + .app__content {
-        left: 100%;
+        margin-left: 100%;
       }
     }
     
