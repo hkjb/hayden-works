@@ -23,15 +23,11 @@ function App() {
 
         <Switch>
           <main className="app__content">
-            { Routes.pageArray.map((route, i) => route.children ?  (
-                <React.Fragment key={i}>
-                  { route.children.map((child, i) => (
-                    <Route exact key={i} path={`${route.path}${child.path}`} component={() => <Markdown src={child.content} />} />
-                  ))}
-                  <Route exact path={route.path} component={() => <Markdown src={route.children[0].content} />} />
-                </React.Fragment>
-              ) : (
-                <Route exact key={i} path={route.path} component={() => <Markdown src={route.content} />} />
+            { Routes.pageArray.map((route, i) => route.children ?
+              route.children.map((child, i) => (
+                <Route exact key={i} path={`${route.path}${child.path}`} component={() => <Markdown title={child.header} src={child.content} />} />
+              )) : (
+                <Route exact key={i} path={route.path} component={() => <Markdown title={child.header} src={route.content} />} />
               )
             )}
           </main>
