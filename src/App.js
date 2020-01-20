@@ -21,17 +21,19 @@ function App() {
       <div id="#app" className={`app ${color}`}>
         <Header />
 
-        <Switch>
-          <main className="app__content">
-            { Routes.pageArray.map((route, i) => route.children ?
-              route.children.map((child, i) => (
-                <Route exact key={i} path={`${route.path}${child.path}`} component={() => <Markdown title={child.header} src={child.content} />} />
-              )) : (
-                <Route exact key={i} path={route.path} component={() => <Markdown title={route.header} src={route.content} />} />
-              )
-            )}
-          </main>
-        </Switch>
+        <div className="app__container">
+          <Switch>
+            <main className="app__content">
+              { Routes.pageArray.map((route, i) => route.children ?
+                route.children.map((child, i) => (
+                  <Route exact key={i} path={`${route.path}${child.path}`} component={() => <Markdown title={child.header} src={child.content} />} />
+                )) : (
+                  <Route exact key={i} path={route.path} component={() => <Markdown title={route.header} src={route.content} />} />
+                )
+              )}
+            </main>
+          </Switch>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
