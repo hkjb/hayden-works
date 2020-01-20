@@ -8,9 +8,6 @@ function Header() {
   
   const [showMenu, setShowMenu] = useState(false);
   
-  const icons = ['computer-classic'];
-  const icon = icons[Math.floor(Math.random() * icons.length)];
-  
   return (
     <>
       <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
@@ -24,7 +21,7 @@ function Header() {
       </div>
       <header className="app__header">
         <button className="app__header__home" onClick={() => setShowMenu(!showMenu)}>
-          <i className={`fa fa-${icon}`} />
+          <i className="fa fa-bars" />
         </button>
 
         { Routes.pageArray.map((route, i) => route.children ? (
