@@ -19,12 +19,12 @@ function Header() {
           <React.Fragment key={i}>
             <NavLink to={route.path} className="app__header__link">{route.header}</NavLink>
             <div className="app__header__children">
-              { route.children.map((child, i) => (
+              { route.children.map((child, i) => child.show !== false && (
                 <NavLink key={i} to={`${route.path}${child.path}`} className="app__header__link">{child.header}</NavLink>
               ))}
             </div>
           </React.Fragment>
-        ) : (
+        ) : route.show !== false && (
           <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
         )
       )}
