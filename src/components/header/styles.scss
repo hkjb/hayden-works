@@ -51,11 +51,11 @@
   @media screen and (max-width: 600px) {
     width: 100%;
     
-    &--open {
-    left: 0%;
+    .app__drawer--open {
+    left: 0% !important;
     }
-    &--closed {
-      left: -100%;
+    .app__drawer--closed {
+      left: -100% !important;
     }
   }
   
@@ -68,7 +68,8 @@
   
   &__link {
     margin: 0 0 10px 0;
-    line-height: 1.8;
+    height: 45px;
+    font-size: 25px;
     font-weight: bold;
   }
 }
