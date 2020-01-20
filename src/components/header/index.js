@@ -23,7 +23,7 @@ function Header() {
         ))}
       </div>
       <header className="app__header">
-        <button className="app__header__home" onClick={this.toggleMenu}>
+        <button className="app__header__home" onClick={toggleMenu}>
           <i className={`fa fa-${icon}`} />
         </button>
 
