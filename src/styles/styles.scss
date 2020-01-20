@@ -65,10 +65,11 @@ strong {
   color: $white;
 }
 
-a {
+a, button {
   background: $white;
   padding: 3px 8px;
   border-radius: 2px;
+  border-width: 0;
 
   &:hover {
     background: rgba($white, 0.5);
