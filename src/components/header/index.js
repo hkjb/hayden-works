@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className={`app__navigation ${showMenu ? 'app__navigation--open' : ''}`}>
       <button className="app__navigation__toggle" onClick={() => setShowMenu(!showMenu)}>
-        <i className={`fa fa-${showMenu ? 'times' : 'bars'}`} />
+        <i className={`fa fa-${showMenu ? 'bars' : 'times'}`} />
       </button>
 
       { Routes.pageArray.map((route, i) => {
