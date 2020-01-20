@@ -8,7 +8,7 @@ class MarkdownReader extends Component {
 
   componentDidMount() {
     if (this.props.title) {
-      document.title = this.props.title;
+      document.title = `hayden.works - ${this.props.title}`;
     }
     
     if (this.props.src.indexOf('.md') !== -1) {
