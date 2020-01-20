@@ -18,7 +18,7 @@ function Header() {
   return (
     <>
       <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
-        <button className="app__header__home" onClick={toggleMenu}>
+        <button className="app__drawer__link" onClick={toggleMenu}>
           <i className="fa fa-times" />
         </button>
 
