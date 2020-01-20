@@ -18,8 +18,7 @@ function Header() {
         if (route.show !== false) {
           return route.children ? (
             <div className="app__navigation__link--has-children">
-              <strong>{route.header}</strong>
-
+              <div className="app__navigation__link__header>{route.header}</div>
               { route.children.map((child, i) => (
                 <NavLink key={i} to={`${route.path}${child.path}`}>{child.header}</NavLink>
               ))}
