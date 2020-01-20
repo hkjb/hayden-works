@@ -6,7 +6,7 @@ import './styles.scss';
 
 function Header() {
   
-  const [showMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   
   const icons = ['computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
