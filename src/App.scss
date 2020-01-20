@@ -1,12 +1,17 @@
 @import '~styles/variables';
 
 .app {
+  color: $white;
   min-height: 100%;
+  
+  &__content {
+    position: absolute;
+    right: 0;
+  }
 
-  &__content, &__footer {
-    position: relative;
-    color: $white;
-    z-index: 100;
+  &__footer {
+    position: absolute;
+    bottom: 0;
   }
 
   &.dark {
