@@ -6,10 +6,6 @@
   justify-content: space-between;
   min-height: 100%;
 
-  &__content {
-    padding: 15px 25px 0 25px;
-  }
-
   &__content, &__footer {
     position: relative;
     color: $white;
