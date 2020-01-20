@@ -41,11 +41,11 @@
     .app__navigation__link {
       font-size: $font-size-lg;
       i {
-        font-size: $font-size-lg;
+        font-size: 0;
       }
       strong {
         line-height: 1.6;
-        font-size: 0;
+        font-size: $font-size-lg;
       }
       a {
         font-size: $font-size-lg;
@@ -54,7 +54,7 @@
   }
   
   &__link i {
-    font-size: 0;
+    font-size: $font-size-lg;
   }
   &__toggle i {
     font-size: $font-size-lg;
