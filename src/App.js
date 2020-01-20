@@ -22,7 +22,7 @@ function App() {
         <Header />
 
         <Switch>
-          <div className="app__content">
+          <main className="app__content">
             { Routes.pageArray.map((route, i) => route.children ?  (
                 <React.Fragment key={i}>
                   { route.children.map((child, i) => (
