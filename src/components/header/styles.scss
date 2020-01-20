@@ -1,8 +1,7 @@
 @import '~styles/variables';
 
-.app__body, .app__footer {
-  padding: 0 0 0 70px;
-  
+.app__body {
+  padding: 15px 25px 0 95px;
   transition: 0.25s;
 }
 
@@ -10,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 77px;
   
   width: 70px;
   padding: 25px 0 25px 25px;
@@ -22,8 +21,8 @@
   &--open {
     width: 200px;
     
-    & + .app__body, .app__footer {
-      padding: 0 0 0 200px;
+    & + .app__body {
+      padding: 15px 25px 0 225px;
     }
     
     .app__navigation__link {
