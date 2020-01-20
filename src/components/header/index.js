@@ -6,7 +6,7 @@ import './styles.scss';
 
 function Header() {
   
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   
   return (
     <header className={`app__navigation ${showMenu ? 'app__navigation--open' : ''}`}>
