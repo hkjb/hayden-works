@@ -20,7 +20,7 @@ function Header() {
       <div className={`app__drawer ${showMenu && 'app__drawer--open'}`}>
         { Routes.pageArray.map((route, i) => route.show !== false && (
           <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
-        )}
+        ))}
       </div>
       <header className="app__header">
         <button className="app__header__home" onClick={this.toggleMenu}>
