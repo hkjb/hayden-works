@@ -2,6 +2,8 @@
 
 .app__body {
   padding: 0 0 0 70px;
+  
+  transition: 0.25s;
 }
 
 .app__navigation {
@@ -36,5 +38,20 @@
     overflow: hidden;
     
     transition: 0.25s;
+  }
+  
+  &__link--has-children {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    
+    height: auto;
+    
+    a {
+      margin: 5px 0 0 0;
+    }
   }
 }
