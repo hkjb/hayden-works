@@ -32,3 +32,25 @@
     }
   }
 }
+
+.app__drawer {
+  display: flex;
+  flex-direction: column;
+  
+  width: 250px;
+  padding: 25px;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  
+  transition: 0.25s;
+  z-index: 1000;
+  
+  &--open {
+    left: 0;
+  }
+  &--closed {
+    left: -250px;
+  }
+}
