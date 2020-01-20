@@ -82,6 +82,10 @@
       flex-grow: 1;
       text-align: center;
       margin: 5px;
+      
+      i {
+        font-size: $font-size-lg;
+      }
     }
   }
   
