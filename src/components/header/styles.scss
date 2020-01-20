@@ -61,6 +61,17 @@
     transition: 0.25s;
   }
   
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    a {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  
   &__link--has-children {
     display: flex;
     flex-direction: column;
