@@ -18,10 +18,10 @@
   flex-direction: column;
   
   &--open {
-    width: 250px;
+    width: 200px;
     
     & + .app__body {
-      padding: 0 0 0 250px;
+      padding: 0 0 0 200px;
     }
   }
   
