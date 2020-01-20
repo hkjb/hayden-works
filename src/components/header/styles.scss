@@ -20,9 +20,6 @@
   &--open {
     width: 250px;
     
-    .app__navigation__link {
-      font-size: 0;
-    }
     & + .app__body {
       padding: 0 0 0 250px;
     }
@@ -33,6 +30,10 @@
     height: 45px;
     font-size: $font-size-lg;
     font-weight: bold;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     
     transition: 0.25s;
   }
