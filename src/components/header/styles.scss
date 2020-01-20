@@ -1,6 +1,6 @@
 @import '~styles/variables';
 
-.app__body {
+.app__content {
   padding: 15px 25px 0 95px;
   transition: 0.25s;
 }
@@ -21,7 +21,7 @@
   &--open {
     width: 200px;
     
-    & + .app__body {
+    & + .app__content {
       padding: 15px 25px 0 225px;
     }
     
