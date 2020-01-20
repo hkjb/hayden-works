@@ -11,7 +11,7 @@ function Header() {
   const icons = ['computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
   
-  toggleMenu = () => {
+  const toggleMenu = () => {
     showMenu = !showMenu;
   }
   
