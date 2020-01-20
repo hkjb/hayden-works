@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Routes from 'routes';
 
 import Header from 'components/header';
-import Footer from 'components/footer';
 import Markdown from 'components/markdown';
 
 import 'styles/styles.scss';
@@ -32,8 +31,6 @@ function App() {
             )}
           </Switch>
         </main>
-
-        <Footer />
       </div>
     </BrowserRouter>
   );
