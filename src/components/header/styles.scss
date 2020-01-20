@@ -54,6 +54,8 @@
     font-size: $font-size-lg;
     font-weight: bold;
     
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
     
     transition: 0.25s;
@@ -70,8 +72,9 @@
     height: auto;
     
     strong {
+      text-overflow: ellipsis;
+      white-space: nowrap;
       overflow: hidden;
-      width: 1ch;
       line-height: 1.175;
     }
     a {
