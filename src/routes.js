@@ -9,6 +9,12 @@ const pageObject = {
     header: 'home',
     content: HomePage,
   },
+  Contact: {
+    path: '/contact',
+    header: 'contact',
+    content: 'Reach me at: --- --- ----',
+    show: false,
+  },
   BestOf: {
     path: '/best-of',
     header: 'best of',
@@ -22,6 +28,12 @@ const pageObject = {
         path: '/2018',
         header: '2018',
         content: Best2018,
+      },
+      {
+        path: '/2017',
+        header: '2017',
+        content: 'Best of 2017',
+        show: false,
       },
     ],
   },
