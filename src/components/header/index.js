@@ -22,7 +22,7 @@ function Header() {
 
               { route.children.map((child, i) => (
                 <NavLink key={i} to={`${route.path}${child.path}`}>{child.header}</NavLink>
-              )}
+              ))}
             </div>
           ) : (
             <NavLink key={i} to={route.path} className="app__navigation__link">{route.header}</NavLink>
