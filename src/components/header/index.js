@@ -18,6 +18,10 @@ function Header() {
   return (
     <>
       <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
+        <button className="app__header__home" onClick={toggleMenu}>
+          <i className="fa fa-times" />
+        </button>
+
         { Routes.pageArray.map((route, i) => route.show !== false && (
           <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
         ))}
