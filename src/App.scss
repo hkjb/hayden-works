@@ -5,12 +5,12 @@
   min-height: 100%;
   
   &__content {
-    position: absolute;
+    position: relative;
     right: 0;
   }
 
   &__footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
   }
 
