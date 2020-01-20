@@ -24,7 +24,7 @@ function Header() {
           <i className="fa fa-bars" />
         </button>
 
-        { Routes.pageArray.map((route, i) => route.children ? (
+        { Routes.pageArray.map((route, i) => route.highlight === true && route.children ? (
             <React.Fragment key={i}>
               <NavLink to={route.path} className="app__header__link">{route.header}</NavLink>
               <div className="app__header__children">
