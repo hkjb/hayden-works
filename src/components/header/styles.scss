@@ -39,9 +39,9 @@
     }
         
     .app__navigation__link {
-      font-size: initial;
+      font-size: $font-size-lg;
       i {
-        font-size: initial;
+        font-size: $font-size-lg;
       }
       strong {
         line-height: 1.6;
@@ -53,17 +53,19 @@
     }
   }
   
+  &__link i {
+    font-size: 0;
+  }
+  &__toggle i {
+    font-size: $font-size-lg;
+  }
   &__link, &__toggle {
     margin: 0 0 10px 0;
     height: 45px;
-    font-size: $font-size-lg;
+    font-size: 0;
     font-weight: bold;
     
     transition: 0.25s;
-    
-    i {
-      font-size: initial;
-    }
   }
   
   &__social {
@@ -91,7 +93,7 @@
     
     strong {
       line-height: 1.175;
-      font-size: 0;
+      font-size: 25px;
     }
     a {
       margin: 5px 0 0 0;
