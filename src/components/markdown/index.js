@@ -7,6 +7,10 @@ class MarkdownReader extends Component {
   };
 
   componentDidMount() {
+    if (this.props.title) {
+      document.title = this.props.title;
+    }
+    
     if (this.props.src.indexOf('.md') !== -1) {
       fetch(this.props.src).then(res => res.text()).then(txtres => this.setState({ content: txtres }));
     } else {
