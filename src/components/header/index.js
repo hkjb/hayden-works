@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Routes from 'routes';
 
@@ -6,19 +6,15 @@ import './styles.scss';
 
 function Header() {
   
-  let showMenu = false;
-
+  const [showMenu] = useState(false);
+  
   const icons = ['computer-classic'];
   const icon = icons[Math.floor(Math.random() * icons.length)];
-  
-  const toggleMenu = () => {
-    showMenu = !showMenu;
-  }
   
   return (
     <>
       <div className={`app__drawer ${showMenu ? 'app__drawer--open' : 'app__drawer--closed'}`}>
-        <button className="app__drawer__link" onClick={toggleMenu}>
+        <button className="app__drawer__link" onClick={() => setShowMenu(!showMenu)}>
           <i className="fa fa-times" />
         </button>
 
@@ -27,7 +23,7 @@ function Header() {
         ))}
       </div>
       <header className="app__header">
-        <button className="app__header__home" onClick={toggleMenu}>
+        <button className="app__header__home" onClick={() => setShowMenu(!showMenu)}>
           <i className={`fa fa-${icon}`} />
         </button>
 
