@@ -3,6 +3,8 @@
 .app__content {
   padding: 15px 25px 0 95px;
   transition: 0.25s;
+  
+  width: calc(100% - 150px);
 }
 
 .app__navigation {
@@ -18,16 +20,28 @@
   display: flex;
   flex-direction: column;
   
+  z-index: 1000;
+  
   &--open {
-    width: 200px;
-    
-    & + .app__content {
-      padding: 15px 25px 0 225px;
+    @media only screen and (min-width: 700px) {
+      width: 200px;
+      
+      & + .app__content {
+        padding: 15px 25px 0 225px;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+      padding: 25px;
+      
+      & + .app__content {
+        padding: 15px 25px 0 100%;
+      }
     }
     
     .app__navigation__link {
       a {
-        display: block;
+        font-size: $font-size-large;
       }
       strong {
         line-height: 1.6;
@@ -65,8 +79,8 @@
       line-height: 1.175;
     }
     a {
-      display: none;
       margin: 5px 0 0 0;
+      font-size: 0;
     }
   }
 }
