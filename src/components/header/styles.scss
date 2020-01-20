@@ -1,78 +1,25 @@
 @import '~styles/variables';
 
-.app__header {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 15px 25px 10px 25px;
-  font-size: $font-size-lg;
-  font-weight: bold;
-  
-  &__home {
-    margin: 10px 10px 0 0;
-    padding: 12px 10px;
-  }
-  &__link {
-    margin: 10px 10px 0 0;
-    
-    &.active + .app__header__children {
-      display: flex;
-    }
-  }
-  &__children {
-    display: none;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    order: 1;
-    margin: 5px 0 0 0;
-
-    a {
-      font-size: $font-size;
-    }
-  }
+.app__body {
+  padding: 0 0 0 250px;
 }
 
-.app__drawer {
+.app__navigation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  
   display: flex;
   flex-direction: column;
   
-  padding: 25px;
-  background: rgba(0, 0, 0, 0.75);
-  
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  
-  transition: 0.25s;
-  z-index: 1000;
-  
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    
-    .app__drawer--open {
-      left: 0%;
-    }
-    .app__drawer--closed {
-      left: -100%;
-    }
+  &--open {
+    left: 0;
   }
-  @media screen and (min-width: 600px) {
-    width: 250px;
-    
-    .app__drawer--open {
-      left: 0;
-    }
-    .app__drawer--closed {
-      left: -250px;
-    }
-  }
-  
-  &__link {
+  &__link, &__toggle {
     margin: 0 0 10px 0;
     height: 45px;
-    font-size: 25px;
+    font-size: $font-size-lg;
     font-weight: bold;
   }
 }
