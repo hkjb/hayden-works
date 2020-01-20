@@ -23,7 +23,7 @@ function Header() {
         </button>
 
         { Routes.pageArray.map((route, i) => route.show !== false && (
-          <NavLink key={i} to={route.path} className="app__header__link">{route.header}</NavLink>
+          <NavLink key={i} to={route.path} className="app__drawer__link">{route.header}</NavLink>
         ))}
       </div>
       <header className="app__header">
