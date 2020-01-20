@@ -18,13 +18,17 @@ function Header() {
         if (route.show !== false) {
           return route.children ? (
             <div className="app__navigation__link app__navigation__link--has-children">
+              <i className={`fa fa-${route.icon}`} />
               <strong>{route.header}</strong>
               { route.children.map((child, i) => child.show !== false && (
                 <NavLink key={i} to={`${route.path}${child.path}`}>{child.header}</NavLink>
               ))}
             </div>
           ) : (
-            <NavLink key={i} to={route.path} className="app__navigation__link">{route.header}</NavLink>
+            <NavLink key={i} to={route.path} className="app__navigation__link">
+              <i className={`fa fa-${route.icon}`} />
+              {route.header}
+            </NavLink>
           );
         }
       })}
