@@ -1,7 +1,8 @@
 @import '~styles/variables';
 
 .app__content {
-  padding: 15px 25px 0 95px;
+  padding: 15px 25px 0 25px;
+  left: 70px;
   transition: 0.25s;
 }
 
@@ -25,7 +26,7 @@
       width: 200px;
       
       & + .app__content {
-        padding: 15px 25px 0 225px;
+        left: 200px;
       }
     }
     @media only screen and (max-width: 700px) {
@@ -33,7 +34,7 @@
       padding: 25px;
       
       & + .app__content {
-        padding: 15px 25px 0 100%;
+        left: 100%;
       }
     }
     
@@ -53,8 +54,6 @@
     font-size: $font-size-lg;
     font-weight: bold;
     
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
     
     transition: 0.25s;
@@ -71,9 +70,8 @@
     height: auto;
     
     strong {
-      text-overflow: ellipsis;
-      white-space: nowrap;
       overflow: hidden;
+      width: 1ch;
       line-height: 1.175;
     }
     a {
