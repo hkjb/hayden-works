@@ -84,7 +84,7 @@
       margin: 5px;
       
       i {
-        font-size: $font-size-lg;
+        font-size: $font-size-lg !important;
       }
     }
   }
@@ -101,7 +101,7 @@
     
     strong {
       line-height: 1.175;
-      font-size: 25px;
+      font-size: 0;
     }
     a {
       margin: 5px 0 0 0;
