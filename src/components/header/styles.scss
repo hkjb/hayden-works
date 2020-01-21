@@ -1,34 +1,111 @@
 @import '~styles/variables';
 
-.app__header {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 15px 25px 10px 25px;
-  font-size: $font-size-lg;
-  font-weight: bold;
+.app__content {
+  padding: 15px 20px 50px 20px;
+  margin-left: 70px;
+  transition: 0.25s;
+}
+
+.app__navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 77px;
   
-  &__home {
-    margin: 10px 10px 0 0;
-  }
-  &__link {
-    margin: 10px 10px 0 0;
-    
-    &.active + .app__header__children {
-      display: flex;
+  width: 70px;
+  padding: 25px 0 25px 25px;
+  transition: 0.25s;
+  
+  display: flex;
+  flex-direction: column;
+  
+  z-index: 1000;
+  
+  &--open {
+    @media only screen and (min-width: 700px) {
+      width: 200px;
+      
+      & + .app__content {
+        margin-left: 200px;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+      padding: 25px;
+      
+      & + .app__content {
+        margin-left: 100%;
+      }
+    }
+        
+    .app__navigation__link {
+      font-size: $font-size-lg;
+      i {
+        font-size: 0;
+      }
+      strong {
+        line-height: 1.6;
+        font-size: $font-size-lg;
+      }
+      a {
+        font-size: $font-size-lg;
+      }
     }
   }
-  &__children {
-    display: none;
-    align-items: center;
+  
+  &__link i {
+    font-size: $font-size-lg;
+  }
+  &__toggle i {
+    font-size: $font-size-lg;
+  }
+  &__link, &__toggle {
+    margin: 0 0 10px 0;
+    height: 45px;
+    font-size: 0;
+    font-weight: bold;
+    
+    transition: 0.25s;
+    
+    i {
+      line-height: 1.6;
+    }
+  }
+  
+  &__social {
+    display: flex;
     flex-wrap: wrap;
-    flex-basis: 100%;
-    order: 1;
-    margin: 5px 0 0 0;
-
+    justify-content: space-between;
+    margin: -5px;
+    
     a {
-      font-size: $font-size;
+      flex-grow: 1;
+      text-align: center;
+      margin: 5px;
+      
+      i {
+        font-size: $font-size-lg !important;
+      }
+    }
+  }
+  
+  &__link--has-children {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    
+    height: auto;
+    
+    strong {
+      line-height: 1.175;
+      font-size: 0;
+    }
+    a {
+      margin: 5px 0 0 0;
+      font-size: 0;
     }
   }
 }

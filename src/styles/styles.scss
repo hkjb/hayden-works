@@ -22,6 +22,8 @@ html, body, #root {
   padding: 0;
   margin: 0;
   line-height: 1.6;
+  
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,12 +67,17 @@ strong {
   color: $white;
 }
 
-a {
+a, button {
   background: $white;
-  padding: 3px 8px;
-  border-radius: 2px;
+  padding: 1px 5px;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
 
   &:hover {
-    background: rgba($white, 0.5);
+    background: rgba($white, 0.75);
   }
+}
+
+button {
+  font-size: $font-size; 
 }

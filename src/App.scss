@@ -1,44 +1,36 @@
 @import '~styles/variables';
 
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  color: $white;
   min-height: 100%;
-
+  
   &__content {
-    flex-grow: 1;
-    padding: 0 25px;
-  }
-
-  &__header, &__content, &__footer {
     position: relative;
-    color: $white;
-    z-index: 100;
+    right: 0;
   }
 
   &.dark {
     background: $gems, linear-gradient(45deg, $dark 0%, $navy 100%);
-    a { color: $navy; }
+    a, button { color: $navy; }
   }
 
   &.blue {
     background: $gems, linear-gradient(45deg, $blue 0%, $olive 100%);
-    a { color: $blue; }
+    a, button { color: $blue; }
   }
 
   &.navy {
     background: $gems, linear-gradient(45deg, $navy 0%, $blue 100%);
-    a { color: $blue; }
+    a, button { color: $blue; }
   }
 
   &.maroon {
     background: $gems, linear-gradient(45deg, $maroon 0%, $dark 100%);
-    a { color: $maroon; }
+    a, button { color: $maroon; }
   }
 
   &.orange {
     background: $gems, linear-gradient(45deg, $maroon 0%, $orange 100%);
-    a { color: $orange; }
+    a, button { color: $orange; }
   }
 }
