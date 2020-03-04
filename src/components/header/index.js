@@ -37,7 +37,7 @@ function Header() {
         <a className="app__navigation__link" href="https://github.com/hkjb" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github" />
         </a>
-        <a className="app__navigation__link" href="https://twitter.com/hhhkkkjjjbbb" target="_blank" rel="noopener noreferrer">
+        <a className="app__navigation__link" href="https://twitter.com/teevee_boy" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-twitter" />
         </a>
         <a className="app__navigation__link" href="https://stackoverflow.com/users/4953804" target="_blank" rel="noopener noreferrer">
