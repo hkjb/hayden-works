@@ -12,8 +12,8 @@ O3 World | 10/2018 - Current
   - [Vertex Inc.](https://www.vertexinc.com)
   
 NSN Solutions | 6/2013 - 7/2018
-  - [Velma Mortgage Marketing](https://www.meetvelma.com)
-  - [Velma Fulfillment Service](https://www.meetvelma.com/products/vfs)
+  - [Velma](https://www.meetvelma.com)
+  - [VFS](https://www.meetvelma.com/products/vfs)
   - [SnapShot Postcard](https://www.snapshotpostcard.com)
 
 ### Let's build something together!
