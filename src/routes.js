@@ -33,22 +33,22 @@ const pageObject = {
     children: [
       {
         path: '/2020',
-        header: '2020',
+        header: '20',
         content: Best2020,
       },
       {
         path: '/2019',
-        header: '2019',
+        header: '19',
         content: Best2019,
       },
       {
         path: '/2018',
-        header: '2018',
+        header: '18',
         content: Best2018,
       },
       {
         path: '/2017',
-        header: '2017',
+        header: '17',
         content: 'Best of 2017',
         show: false,
       },
