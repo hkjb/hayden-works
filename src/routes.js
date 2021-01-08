@@ -1,5 +1,6 @@
 import HomePage from 'pages/home.md';
 
+import Best2020 from 'pages/2020.md';
 import Best2019 from 'pages/2019.md';
 import Best2018 from 'pages/2018.md';
 
@@ -30,6 +31,11 @@ const pageObject = {
     header: 'best of',
     icon: 'star',
     children: [
+      {
+        path: '/2020',
+        header: '2020',
+        content: Best2020,
+      },
       {
         path: '/2019',
         header: '2019',
