@@ -3,11 +3,14 @@ I love React and building cool things.
 
 ## History
 O3 World | 10/2018 - Current
-  - [La Colombe](https://www.lacolombe.com)
-  - [SEI Investments Company](https://seic.com/)
   - [REC Philly](https://www.recphilly.com)
+  - [SEI Investments Company](https://seic.com/)
+  - [3BL Media](https://www.3blmedia.com)
   - [Gettacar](https://www.gettacar.com)
-
+  - [La Colombe](https://www.lacolombe.com)
+  - [Urvin](https://www.urvin.ai)
+  - [Vertex Inc.](https://www.vertexinc.com)
+  
 NSN Solutions | 6/2013 - 7/2018
   - [Velma Mortgage Marketing](https://www.meetvelma.com)
   - [Velma Fulfillment Service](https://www.meetvelma.com/products/vfs)
