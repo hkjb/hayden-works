@@ -4,7 +4,7 @@ I love React and building cool things.
 ## History
 O3 World | 10/2018 - Current
   - [REC Philly](https://www.recphilly.com)
-  - [SEI Investments Company](https://seic.com/)
+  - [SEI](https://seic.com/)
   - [3BL Media](https://www.3blmedia.com)
   - [Gettacar](https://www.gettacar.com)
   - [La Colombe](https://www.lacolombe.com)
