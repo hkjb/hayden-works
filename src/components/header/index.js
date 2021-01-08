@@ -6,14 +6,8 @@ import './styles.scss';
 
 function Header() {
   
-  const [showMenu, setShowMenu] = useState(false);
-  
   return (
-    <header className={`app__navigation ${showMenu ? 'app__navigation--open' : ''}`}>
-      <button className="app__navigation__toggle" onClick={() => setShowMenu(!showMenu)}>
-        <i className={`fa fa-${showMenu ? 'times' : 'bars'}`} />
-      </button>
-
+    <header className="app__navigation">
       { Routes.pageArray.map((route, i) => {
         if (route.show !== false) {
           return route.children ? (
