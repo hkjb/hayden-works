@@ -3,7 +3,6 @@
 .app__content {
   padding: 15px 20px 50px 20px;
   margin-left: 70px;
-  transition: 0.25s;
 }
 
 .app__navigation {
@@ -14,40 +13,11 @@
   
   width: 70px;
   padding: 25px 0 25px 25px;
-  transition: 0.25s;
   
   display: flex;
   flex-direction: column;
   
   z-index: 1000;
-  
-  &--open {
-    @media only screen and (min-width: 700px) {
-      width: 200px;
-      
-      & + .app__content {
-        margin-left: 200px;
-      }
-    }
-    @media only screen and (max-width: 700px) {
-      width: 100%;
-      padding: 25px;
-      
-      & + .app__content {
-        margin-left: 100%;
-      }
-    }
-        
-    .app__navigation__link {
-      font-size: $font-size-lg;
-      strong {
-        font-size: $font-size-lg;
-      }
-      a {
-        font-size: $font-size-lg;
-      }
-    }
-  }
   
   &__link i {
     font-size: $font-size-lg;
@@ -58,11 +28,9 @@
   &__link, &__toggle {
     margin: 0 0 10px 0;
     height: 45px;
-    font-size: 0;
+    font-size: 15px;
     font-weight: bold;
-    
-    transition: 0.25s;
-    
+        
     i {
       line-height: 1.6;
     }
