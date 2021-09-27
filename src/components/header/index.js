@@ -20,7 +20,6 @@ function Header() {
           ) : (
             <NavLink key={i} to={route.path} className="app__navigation__link">
               <i className={`fa fa-${route.icon}`} />
-              &nbsp;{route.header}
             </NavLink>
           );
         }
