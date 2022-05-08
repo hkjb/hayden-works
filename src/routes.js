@@ -1,5 +1,6 @@
 import HomePage from 'pages/home.md';
 
+import Best2021 from 'pages/2021.md';
 import Best2020 from 'pages/2020.md';
 import Best2019 from 'pages/2019.md';
 import Best2018 from 'pages/2018.md';
@@ -12,7 +13,7 @@ import Best2018 from 'pages/2018.md';
 // show:      determines visibility on all navs
 // children:  only applicable for top level sections, includes additional page objects
 
-const pageObject = { 
+const pageObject = {
   Home: {
     path: '/',
     header: 'home',
@@ -31,6 +32,12 @@ const pageObject = {
     header: 'best of',
     icon: 'star',
     children: [
+      {
+        path: '/2021',
+        header: '21',
+        content: Best2021,
+        show: false,
+      },
       {
         path: '/2020',
         header: '20',

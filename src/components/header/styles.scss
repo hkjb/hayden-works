@@ -10,15 +10,15 @@
   top: 0;
   left: 0;
   bottom: 0;
-  
+
   width: 70px;
   padding: 25px 0 25px 25px;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   z-index: 1000;
-  
+
   &__link i {
     font-size: $font-size-lg;
   }
@@ -30,43 +30,48 @@
     height: 45px;
     font-size: 15px;
     font-weight: bold;
-        
+
     i {
       line-height: 1.6;
     }
   }
-  
+
   &__social {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: -5px;
-    
+
     a {
       flex-grow: 1;
       text-align: center;
       margin: 5px;
-      
+
       i {
         font-size: $font-size-lg !important;
       }
     }
   }
-  
+
   &__link--has-children {
     display: flex;
     flex-direction: column;
-    
-    padding: 5px;
+
+    padding: 3px;
     border: 3px solid #ffffff;
-    border-radius: 5px;
-    
+    border-radius: 10px;
+
     height: auto;
+
+    .fa-star {
+      padding: 0 3px;
+    }
 
     a {
       margin: 5px 0 0 0;
       text-align: center;
       padding: 1px 0;
+      border-radius: 5px;
     }
   }
 }

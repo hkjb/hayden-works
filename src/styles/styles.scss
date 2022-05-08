@@ -1,8 +1,6 @@
-$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
-
-@import '~@fortawesome/fontawesome-pro/scss/solid';
-@import '~@fortawesome/fontawesome-pro/scss/fontawesome';
-@import '~@fortawesome/fontawesome-pro/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 @import 'variables';
 
@@ -22,8 +20,6 @@ html, body, #root {
   padding: 0;
   margin: 0;
   line-height: 1.6;
-  
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +68,7 @@ a, button {
   background: $white;
   padding: 1px 5px;
   border: 3px solid #ffffff;
-  border-radius: 3px;
+  border-radius: 10px;
 
   &:hover {
     background: rgba($white, 0.75);
@@ -80,5 +76,5 @@ a, button {
 }
 
 button {
-  font-size: $font-size; 
+  font-size: $font-size;
 }
