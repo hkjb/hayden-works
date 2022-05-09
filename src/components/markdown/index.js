@@ -10,7 +10,7 @@ class MarkdownReader extends Component {
     if (this.props.title) {
       document.title = `hayden.works - ${this.props.title}`;
     }
-    
+
     if (this.props.src.indexOf('.md') !== -1) {
       fetch(this.props.src).then(res => res.text()).then(txtres => this.setState({ content: txtres }));
     } else {
@@ -21,9 +21,8 @@ class MarkdownReader extends Component {
   render() {
     return (
       <ReactMarkdown
-        escapeHtml={false}
         linkTarget="_blank"
-        source={this.state.content}
+        children={this.state.content}
       />
     );
   };

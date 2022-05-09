@@ -65,7 +65,9 @@ const pageObject = {
 
 const pageArray = Object.values(pageObject);
 
-export default {
+const routes = {
   pageArray,
   pageObject,
 };
+
+export default routes;
