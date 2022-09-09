@@ -25,7 +25,7 @@
   }
 
   &.maroon {
-    background: $maps, linear-gradient(45deg, $maroon 0%, $dark 100%);
+    background: $map, linear-gradient(45deg, $maroon 0%, $dark 100%);
     a, button { color: $maroon; }
   }
 
