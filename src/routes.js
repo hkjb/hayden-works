@@ -36,7 +36,6 @@ const pageObject = {
         path: '/2021',
         header: '21',
         content: Best2021,
-        show: false,
       },
       {
         path: '/2020',
@@ -57,6 +56,7 @@ const pageObject = {
         path: '/2017',
         header: '17',
         content: 'Best of 2017',
+        show: false,
       },
     ],
   },
