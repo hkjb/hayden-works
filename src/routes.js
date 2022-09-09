@@ -57,7 +57,6 @@ const pageObject = {
         path: '/2017',
         header: '17',
         content: 'Best of 2017',
-        show: false,
       },
     ],
   },
