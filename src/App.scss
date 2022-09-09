@@ -10,7 +10,7 @@
   }
 
   &.dark {
-    background: $maps, linear-gradient(45deg, $dark 0%, $navy 100%);
+    background: $map, linear-gradient(45deg, $dark 0%, $navy 100%);
     a, button { color: $navy; }
   }
 
