@@ -10,12 +10,12 @@
   }
 
   &.dark {
-    background: $gems, linear-gradient(45deg, $dark 0%, $navy 100%);
+    background: $maps, linear-gradient(45deg, $dark 0%, $navy 100%);
     a, button { color: $navy; }
   }
 
   &.blue {
-    background: $gems, linear-gradient(45deg, $blue 0%, $olive 100%);
+    background: $floral, linear-gradient(45deg, $blue 0%, $olive 100%);
     a, button { color: $blue; }
   }
 
@@ -25,7 +25,7 @@
   }
 
   &.maroon {
-    background: $gems, linear-gradient(45deg, $maroon 0%, $dark 100%);
+    background: $maps, linear-gradient(45deg, $maroon 0%, $dark 100%);
     a, button { color: $maroon; }
   }
 
