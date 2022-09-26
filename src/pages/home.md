@@ -8,7 +8,7 @@ O3 World | 10/2018 - Current
   - [3BL Media](https://www.3blmedia.com)
   - [Triple Pundit](https://www.triplepundit.com)
   - [CSRWire](https://www.csrwire.com)
-  - [Gettacar](https://www.gettacar.com)
+  - [Gettacar](https://www.getta.com)
   - [La Colombe](https://www.lacolombe.com)
   - [Urvin](https://www.urvin.ai)
   - [Vertex Inc.](https://www.vertexinc.com)
