@@ -2,7 +2,9 @@
 I love React and building cool things.
 
 ## History
-O3 World | 10/2018 - Current
+Vertex Inc. | 10/2022 - Current
+
+O3 World | 10/2018 - 7/2022
   - [REC Philly](https://www.recphilly.com)
   - [SEI](https://seic.com/)
   - [3BL Media](https://www.3blmedia.com)
