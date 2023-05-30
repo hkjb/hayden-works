@@ -17,6 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <style>html { font-size: 18px; }</style>
       <div id="#app" className={`app ${color}`}>
         <Header />
 
