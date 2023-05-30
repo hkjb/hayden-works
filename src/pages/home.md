@@ -1,8 +1,11 @@
 # I'm Hayden, a full stack developer in Philadelphia
-I love React and building cool things.
+I love SCSS, Javascript, and building cool things.
 
 ## History
-O3 World | 10/2018 - Current
+Vertex Inc. | 11/2022 - 5/2023
+  - [Payroll Pro](https://www.vertexinc.com/solutions/products)
+
+O3 World | 10/2018 - 7/2022
   - [REC Philly](https://www.recphilly.com)
   - [SEI](https://seic.com/)
   - [3BL Media](https://www.3blmedia.com)
@@ -20,3 +23,4 @@ NSN Solutions | 6/2013 - 7/2018
 
 ### Let's build something together!
 You can reach me through [LinkedIn](https://www.linkedin.com/in/hkjb/)!
+Check out the sidebar for my Top 10 (sometimes) lists for each year :- )
