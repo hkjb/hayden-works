@@ -2,10 +2,12 @@
 I love SCSS, Javascript, and building cool things.
 
 ## History
-Vertex Inc. | 11/2022 - 5/2023
+[Moxie Labs](https://moxielabs.co/) | 6/23 - Current
+
+[Vertex Inc.](https://www.vertexinc.com/) | 11/2022 - 5/2023
   - [Payroll Pro](https://www.vertexinc.com/solutions/products)
 
-O3 World | 10/2018 - 7/2022
+[O3 World](https://www.o3world.com/) | 10/2018 - 7/2022
   - [REC Philly](https://www.recphilly.com)
   - [SEI](https://seic.com/)
   - [3BL Media](https://www.3blmedia.com)
