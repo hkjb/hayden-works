@@ -1,0 +1,118 @@
+@import 'styles/variables';
+
+.app {
+  color: $white;
+  min-height: 100%;
+  
+  &_content {
+    position: relative;
+    right: 0;
+  }
+
+  &.dark {
+    background: $gems, linear-gradient(45deg, $dark 0%, $navy 100%);
+    a, button { color: $navy; }
+  }
+
+  &.blue {
+    background: $gems, linear-gradient(45deg, $blue 0%, $olive 100%);
+    a, button { color: $blue; }
+  }
+
+  &.navy {
+    background: $gems, linear-gradient(45deg, $navy 0%, $blue 100%);
+    a, button { color: $blue; }
+  }
+
+  &.maroon {
+    background: $gems, linear-gradient(45deg, $maroon 0%, $dark 100%);
+    a, button { color: $maroon; }
+  }
+
+  &.orange {
+    background: $gems, linear-gradient(45deg, $maroon 0%, $orange 100%);
+    a, button { color: $orange; }
+  }
+
+  &_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  
+    width: 70px;
+    padding: 25px 0 25px 25px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    z-index: 1000;
+  
+    &_link i {
+      font-size: $font-size-lg;
+    }
+    &_toggle i {
+      font-size: $font-size-lg;
+    }
+    &_link, &_toggle {
+      margin: 0 0 10px 0;
+      height: 37px;
+      width: 29px;
+      font-size: 15px;
+      font-weight: bold;
+      overflow: hidden;
+  
+      i {
+        line-height: 1.6;
+      }
+    }
+  
+    &_social {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -5px;
+
+      width: 55px;
+  
+      a {
+        flex-grow: 1;
+        text-align: center;
+        margin: 5px;
+  
+        i {
+          font-size: $font-size-lg !important;
+        }
+      }
+    }
+  
+    &_link--has-children {
+      display: flex;
+      flex-direction: column;
+
+      width: 33px;
+  
+      padding: 3px;
+      border: 3px solid #ffffff;
+      border-radius: 10px;
+  
+      height: auto;
+  
+      .fa-star {
+        padding: 0 3px;
+      }
+  
+      a {
+        margin: 5px 0 0 0;
+        text-align: center;
+        padding: 1px 0;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &_content {
+    padding: 15px 15px 50px 20px;
+    margin-left: 70px;
+  }
+}
