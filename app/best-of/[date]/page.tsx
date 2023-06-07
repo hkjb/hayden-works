@@ -4,8 +4,14 @@ import BestOf2020 from './2020.mdx';
 import BestOf2021 from './2021.mdx';
 import BestOf2022 from './2022.mdx';
 
-export default function Page({ params }) {
-  const routes = {
+type PageProps = {
+  params: {
+    date: number;
+  }
+};
+
+export default function Page(props: PageProps) {
+  const routes : { [key: string]: any } = {
     2018: BestOf2018,
     2019: BestOf2019,
     2020: BestOf2020,
@@ -13,7 +19,7 @@ export default function Page({ params }) {
     2022: BestOf2022,
   };
 
-  const Markdown = routes[params.date];
+  const Markdown = routes[props.params.date];
 
   return <Markdown />;
 }
