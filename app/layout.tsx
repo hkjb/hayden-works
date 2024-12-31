@@ -35,15 +35,6 @@ export default function RootLayout({
           <i className="fa fa-house" />
         </Link>
 
-        <div className="app_nav_link app_nav_link--has-children">
-          <i className="fa fa-star" />
-          <Link href="/best-of/2022">22</Link>
-          <Link href="/best-of/2021">21</Link>
-          <Link href="/best-of/2020">20</Link>
-          <Link href="/best-of/2019">19</Link>
-          <Link href="/best-of/2018">18</Link>
-        </div>
-
         <div className="app_nav_social">
           <a className="app_nav_link" href="https://github.com/hkjb" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github" />
