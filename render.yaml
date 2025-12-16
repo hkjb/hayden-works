@@ -2,5 +2,5 @@ services:
 - type: web
   name: next-js
   env: node
-  buildCommand: yarn; yarn build
-  startCommand: yarn start
+  buildCommand: npm install; npm run build
+  startCommand: npm start
