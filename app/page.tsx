@@ -7,7 +7,7 @@ export default function Page() {
 
       <section>
       <h3>
-        <a href="https://www.o3world.com/" target="_blank" rel="noopener noreferrer">O3 World</a> | 10/2025 - 1/2025
+        <a href="https://www.o3world.com/" target="_blank" rel="noopener noreferrer">O3 World</a> | 10/2025 - Current
       </h3>
       <ul>
         <li>
