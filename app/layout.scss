@@ -10,27 +10,27 @@
   }
 
   &.dark {
-    background: $gems, linear-gradient(45deg, $dark 0%, $navy 100%);
+    .app_content { background: $gems, linear-gradient(45deg, $dark 0%, $navy 100%); };
     a, button { color: $navy; }
   }
 
   &.blue {
-    background: $gems, linear-gradient(45deg, $blue 0%, $olive 100%);
+    .app_content { background: $gems, linear-gradient(45deg, $blue 0%, $olive 100%); };
     a, button { color: $blue; }
   }
 
   &.navy {
-    background: $gems, linear-gradient(45deg, $navy 0%, $blue 100%);
+    .app_content { background: $gems, linear-gradient(45deg, $navy 0%, $blue 100%); };
     a, button { color: $blue; }
   }
 
   &.maroon {
-    background: $gems, linear-gradient(45deg, $maroon 0%, $dark 100%);
+    .app_content { background: $gems, linear-gradient(45deg, $maroon 0%, $dark 100%); };
     a, button { color: $maroon; }
   }
 
   &.orange {
-    background: $gems, linear-gradient(45deg, $maroon 0%, $orange 100%);
+    .app_content { background: $gems, linear-gradient(45deg, $maroon 0%, $orange 100%); };
     a, button { color: $orange; }
   }
 
@@ -112,7 +112,6 @@
   }
 
   &_content {
-    padding: 15px 15px 50px 20px;
-    margin-left: 70px;
+    padding: 15px 15px 50px calc(20px + 70px);
   }
 }

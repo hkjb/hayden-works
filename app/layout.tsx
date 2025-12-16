@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { Rubik } from 'next/font/google';
 
@@ -39,9 +40,9 @@ export default function RootLayout({
           <a className="app_nav_link" href="https://github.com/hkjb" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github" />
           </a>
-          <a className="app_nav_link" href="https://twitter.com/teevee_boy" target="_blank" rel="noopener noreferrer">
+          {/* <a className="app_nav_link" href="https://twitter.com/teevee_boy" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-twitter" />
-          </a>
+          </a> */}
           <a className="app_nav_link" href="https://stackoverflow.com/users/4953804" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-stack-overflow" />
           </a>
