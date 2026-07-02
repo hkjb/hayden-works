@@ -11,6 +11,9 @@ export default function Page() {
       </h3>
       <ul>
         <li>
+        <a href="https://www.ama.org/" target="_blank" rel="noopener noreferrer">American Marketing Association</a>
+        </li>
+        <li>
         <a href="https://tyndaleusa.com/" target="_blank" rel="noopener noreferrer">Tyndale USA</a>
         </li>
       </ul>
