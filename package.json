@@ -20,7 +20,7 @@
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "next": "^16.0.10",
-    "postcss": "8.4.24",
+    "postcss": "8.4.31",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "typescript": "5.1.3"
